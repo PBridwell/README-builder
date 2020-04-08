@@ -9,71 +9,58 @@ ${prompt.description}
 
 ## Table of contents
 
-- [Author](#Authors)
+- [Installation](#Installation)
 
-- [License](#License)
-  
-- [Installing](#Installing)
+- [Usage](#Usage)
+
+- [Tests](#Tests)
  
 - [Technologies](#Built-with)
 
-- [Acknowledgments](#Acknowledgments)
+- [License](#License)
+
+- [Questions](#Questions)
   
 
 
-### Installing
+### Installation
 
+```
 ${prompt.install}
-
-```
-Give the example
 ```
 
-And repeat
 
-```
-until finished
-```
+## Usage 
 
-End with an example of getting some data out of the system or using it for a little demo
+${usage}
 
-## Running the tests
+## Tests
 
 ${prompt.test}
 
 
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
 {Technologies checklist}
 
 
+## License
+
+${License}
 
 
-## Authors
+
+
+## Questions
 
 * **Name from github response** - *Lead Developer* 
 
+
+If you have any questions about the application, feel free to contact me.
 
 {bio image}
 
 
 - [Email from github response](Email)
 
-
-
-
-
-## License
-
-This project is licensed under ${prompt.license}
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc

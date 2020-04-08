@@ -11,24 +11,38 @@ const questions = inquirer
     name: "user"
   },  
   {
-        type: "input",
-        message: "What is the title of your project?",
-        name: "title"
-      },
+    type: "input",
+    message: "What is the title of your project?",
+    name: "title"
+  },
     {
     type: "input",
     message: "Enter a brief description of your project",
     name: "description"
     },
     {
-    type: "input",
-    message: "Give the user short instructions on how to install your application",
-    name: "install"
+    type: "list",
+    message: "Which license should your app use?",
+    name: "license",
+    choices: ["MIT","Public domain", "LGPL", "Proprietary"]
     },
+    {
+    type: "input",
+    message: "What commands should the user run to install this application?",
+    name: "install",
+    default: "npm i"
+    },
+    {
+    type: "input",
+    message: "What should the user know about using this application?",
+    name: "instructions"
+    },
+    
 ])
 .then(answers => {
   console.log(answers.user)
-  api.getUser()
+  api.getUser(answers.user)
+  .then(response =>(response.data))
 })
 .catch(error => {
   console.log(error)
@@ -44,3 +58,4 @@ function init() {
 }
 
 init();
+
