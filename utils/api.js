@@ -1,18 +1,19 @@
 require('dotenv').config()
+const questions = require('../index.js')
 const axios = require('axios')
-
+console.log(questions)
 const api = {
   getUser(username) {
     axios
-      .get(`https://api.github.com/users/${username}`, {
-        headers: {"Authorization": "token 8554896a03baad4493f786697c175633c08cd803"}
+      .get(`https://api.github.com/users/${questions.answers.user}`, {
+        headers: {"Authorization": "token " + process.env.API_TOKEN}
       })
       .then(response => console.log(response.data))
       .catch(error => console.log(error))
   }
 };
 
-api.getUser("PBridwell")
+// api.getUser("PBridwell")
 
 module.exports = api;
 
