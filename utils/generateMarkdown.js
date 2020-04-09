@@ -1,4 +1,5 @@
-function generateMarkdown(data) {
+// const questions = require('../questions')
+function generateMarkdown(data, response) {
   return `
 # ${data.title}
 

@@ -37,12 +37,14 @@ const questions = inquirer
     message: "What should the user know about using this application?",
     name: "instructions"
     },
-    
+
 ])
 .then(answers => {
-  console.log(answers.user)
+  console.log(answers)
   api.getUser(answers.user)
-  .then(response =>(response.data))
+  .then(response =>console.log(response.data))
+  writeToFile()
+  
 })
 .catch(error => {
   console.log(error)
@@ -50,8 +52,20 @@ const questions = inquirer
 
 module.exports = questions;
 
-function writeToFile(fileName, data) {
+function writeToFile() {
+  fs.appendFile("README.md", answers.user + '\n', function(err) {
+
+    if (err) {
+      console.log(err);
+    }
+    else {
+      console.log("Commit logged!");
+    }
+  
+  });
+  
 }
+
 
 function init() {
 
