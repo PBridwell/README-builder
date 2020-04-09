@@ -3,7 +3,7 @@ function generateMarkdown(data, response) {
   return `
   # ${data.title}
 
-  ## Badge
+  ![Badge](https://img.shields.io/static/v1?label=GitHub_User&message=PBridwell&color=<COLOR>?style=plastic)
 
   ## Description
 
@@ -19,7 +19,7 @@ function generateMarkdown(data, response) {
 
 
   ### Installation
-    The Application should be installed by running the following commands
+    The Application should be installed by running the following commands:
   
    ${data.install}
   
@@ -28,14 +28,16 @@ function generateMarkdown(data, response) {
   ## Tests
   ${data.tests}
   ## Built With
-  {Technologies checklist}
+  ${data.technologies}
   ## License
+
+  ${data.license}
   
   ## Questions
-  * **Name from github response** - *Lead Developer* 
+  * **${data.name}** - *Lead Developer* 
   If you have any questions about the application, feel free to contact me.
-  {bio image}
-  - [Email from github response](Email)
+  - [${response.email}](Email)
+  <img src="${response.avatar_url}" alt="Smiley face" height="35" width="35">
 
 `;
 }

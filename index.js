@@ -9,6 +9,11 @@ const questions = inquirer
     type: "input",
     message: "What is your GitHub username?",
     name: "user"
+  },
+  {
+    type: "input",
+    message: "What is your full name?",
+    name: "name"
   },  
   {
     type: "input",
@@ -25,6 +30,12 @@ const questions = inquirer
     message: "Which license should your app use?",
     name: "license",
     choices: ["MIT","Public domain", "LGPL", "Proprietary"]
+    },
+    {
+    type: "checkbox",
+    message: "Which technologies did you use to build this application?",
+    name: "technologies",
+    choices: ["Javascript", "CSS", "HTML", "AJAX", "Ruby", "React"]
     },
     {
     type: "input",

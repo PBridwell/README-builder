@@ -1,11 +1,11 @@
 
-  # title 
+  # Project 
 
-  ## Badge
+  ![Badge](https://img.shields.io/static/v1?label=GitHub_User&message=kristincenters&color=<COLOR>?style=plastic)
 
   ## Description
 
-  title 
+  this is it 
   
   ## Table of contents
   - [Installation](#Installation)
@@ -17,20 +17,23 @@
 
 
   ### Installation
+    The Application should be installed by running the following commands:
   
-  # npm i
+   npm i
   
   ## Usage 
   
   ## Tests
-  undefined
+  sfsdf
   ## Built With
-  {Technologies checklist}
+  CSS,HTML
   ## License
+
+  MIT
   
   ## Questions
-  * **Name from github response** - *Lead Developer* 
+  * **Patrick Bridwell ** - *Lead Developer* 
   If you have any questions about the application, feel free to contact me.
-  {bio image}
-  - [Email from github response](Email)
+  - [patbridwell@cox.net](Email)
+  <img src="https://avatars3.githubusercontent.com/u/56896214?v=4" alt="Smiley face" height="35" width="35">
 
