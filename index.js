@@ -37,34 +37,36 @@ const questions = inquirer
     message: "What should the user know about using this application?",
     name: "instructions"
     },
+    {
+    type: "input",
+    message: "What should the user know about running tests for this application?",
+    name: "tests"
+    }
 
 ])
 .then(answers => {
   console.log(answers)
   api.getUser(answers.user)
-  .then(response =>console.log(response.data))
-  writeToFile()
-  
-})
-.catch(error => {
-  console.log(error)
-})
+  .then(response =>{
+  generateMarkdown(answers, response.data)
+  const markdown = generateMarkdown(answers, response.data)
+  fs.writeFile("./README.md", markdown, () => {
+    console.log("success!")
+  } )
 
+
+}
+  
+  
+)
+.catch(error => {
+
+  console.log(error)
+
+})
+})
 module.exports = questions;
 
-function writeToFile() {
-  fs.appendFile("README.md", answers.user + '\n', function(err) {
-
-    if (err) {
-      console.log(err);
-    }
-    else {
-      console.log("Commit logged!");
-    }
-  
-  });
-  
-}
 
 
 function init() {
