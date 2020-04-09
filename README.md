@@ -5,11 +5,10 @@
 
   ## Description
 
-  This application generates a complete README markdown file based on user input
+  This application builds a README for the user through command line prompts
   
   ## Table of contents
   - [Installation](#Installation)
-  - [Usage](#Usage)
   - [Tests](#Tests)
   - [Technologies](#Built-with)
   - [License](#License)
@@ -19,12 +18,12 @@
   ### Installation
     The Application should be installed by running the following commands:
   
-   User should make sure that they have a Github user name and Email. User then runs npm i in the command line. User then runs node index in command line and follows prompt to create README.
+   User should make sure that they have a GitHub profile and their own personal access token from Github. User then clones in the application to a new local directory and runs 'npm i' in the command line. User then follows the prompt to create a readme.
   
-  ## Usage 
+  
   
   ## Tests
-  User can test api funtionality by hardcoding their username 
+  user can run their own tests by hardcoding variables 
   ## Built With
   Javascript,HTML,AJAX
   ## License
@@ -36,4 +35,7 @@
   If you have any questions about the application, feel free to contact me.
   - [patbridwell@cox.net](Email)
   <img src="https://avatars3.githubusercontent.com/u/56896214?v=4" alt="Smiley face" height="35" width="35">
+
+  - [My Github Repository](https://api.github.com/users/PBridwell/repos)
+  - [My personal Portfolio](https://pbridwell.github.io/)
 

@@ -11,7 +11,6 @@ function generateMarkdown(data, response) {
   
   ## Table of contents
   - [Installation](#Installation)
-  - [Usage](#Usage)
   - [Tests](#Tests)
   - [Technologies](#Built-with)
   - [License](#License)
@@ -23,7 +22,7 @@ function generateMarkdown(data, response) {
   
    ${data.install}
   
-  ## Usage 
+  
   
   ## Tests
   ${data.tests}
@@ -38,6 +37,9 @@ function generateMarkdown(data, response) {
   If you have any questions about the application, feel free to contact me.
   - [${response.email}](Email)
   <img src="${response.avatar_url}" alt="Smiley face" height="35" width="35">
+
+  - [My Github Repository](${response.repos_url})
+  - [My personal Portfolio](${response.blog})
 
 `;
 }
